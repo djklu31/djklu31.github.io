@@ -270,7 +270,7 @@
 
   .watch-frame {
     position: relative;
-    width: 220px;
+    width: 450px;
   }
 
   .watch-bezel {
@@ -285,6 +285,8 @@
   }
 
   .watch-screen {
+    width: 422px;
+    height: 514px;
     border-radius: 40px;
     overflow: hidden;
     background: #000;
@@ -292,7 +294,10 @@
 
   .watch-screen img {
     width: 100%;
+    height: 100%;
     display: block;
+    object-fit: cover;
+    transform: scale(1.08);
   }
 
   .watch-band-top, .watch-band-bottom {
@@ -720,7 +725,7 @@
   <div class="screens-row">
     <div class="screen-item">
       <div class="screen-watch">
-        <img src="assets/metronome.png" alt="Conducto screenshot"/>
+        <img src="assets/metronome-screenshot.png" alt="Conducto screenshot"/>
       </div>
       <div class="screen-label">Metronome</div>
     </div>
