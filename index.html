@@ -88,11 +88,22 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 48px;
+    justify-content: center;
     position: relative;
     padding: 120px 60px 80px;
     overflow: hidden;
+  }
+
+  .hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
   }
 
   .hero-bg {
@@ -136,7 +147,6 @@
 
   .hero-content {
     position: relative;
-    z-index: 2;
     flex: 1 1 auto;
     min-width: 0;
     max-width: 560px;
@@ -242,7 +252,6 @@
   /* WATCH MOCKUP */
   .hero-watch {
     flex: 0 0 auto;
-    z-index: 2;
     animation: float 6s ease-in-out infinite;
   }
 
@@ -602,6 +611,7 @@
     <div class="ring"></div>
   </div>
 
+  <div class="hero-inner">
   <div class="hero-content">
     <div class="hero-badge">
       <span class="badge-dot"></span>
@@ -628,6 +638,7 @@
       </div>
     </div>
     <div class="watch-band-bottom"></div>
+  </div>
   </div>
 </section>
 
